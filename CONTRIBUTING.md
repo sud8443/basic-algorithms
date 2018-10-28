@@ -1,10 +1,4 @@
-# basic-algorithms
-
-Basic Computer Science Algorithms in any Preferred Language.
-
-## Contribution 
-
-*Excerpt from [CONTRIBUTING.md](https://github.com/YaMo97/basic-algorithms/blob/master/CONTRIBUTING.md).*
+# Contribution 
 
  - Contributions are always welcome. Language doesn't matter. Just make sure you're implementing an algorithm.
 
