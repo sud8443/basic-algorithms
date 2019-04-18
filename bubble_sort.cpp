@@ -35,6 +35,5 @@ int main()
 	{
 		cout << a[i] << '\n';
         }
-	
   return 0;
 }
