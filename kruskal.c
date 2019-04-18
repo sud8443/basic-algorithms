@@ -3,12 +3,14 @@
 typedef struct edge
 {
     int u,v,w;
-}edge;
+}
+edge;
 typedef struct edgelist
 {
 edge data[MAX];
     int n;
-}edgelist;
+}
+edgelist;
 edgelist elist;
 int G[MAX][MAX],n;
 edgelist spanlist;
@@ -25,25 +27,28 @@ scanf("%d",&n);
 printf("\nEnter the adjacency matrix:\n");
  for(i=0;i<n;i++)
  for(j=0;j<n;j++)
-            scanf("%d",&G[i][j]);
+    scanf("%d",&G[i][j]);
   kruskal();
     print();
-}void kruskal()
+}
+void kruskal()
 {
     int belongs[MAX],i,j,cno1,cno2;
     elist.n=0;
-for(i=1;i<n;i++)
-        for(j=0;j<i;j++)
-        {
-            if(G[i][j]!=0)
-            { elist.data[elist.n].u=i;
-                elist.data[elist.n].v=j;
-                elist.data[elist.n].w=G[i][j];
-                elist.n++;
+    for(i=1;i<n;i++)
+      for(j=0;j<i;j++)
+       {
+         if(G[i][j]!=0)
+            {
+             elist.data[elist.n].u=i;
+             elist.data[elist.n].v=j;
+             elist.data[elist.n].w=G[i][j];
+             elist.n++;
             }
-        }sort();
+        }
+    sort();
 for(i=0;i<n;i++)
-        belongs[i]=i;
+    belongs[i]=i;
 spanlist.n=0;
  for(i=0;i<elist.n;i++)
     {
@@ -61,7 +66,8 @@ if(cno1!=cno2)
 int find(int belongs[],int vertexno)
 {
     return(belongs[vertexno]);
-}void union1(int belongs[],int c1,int c2)
+}
+void union1(int belongs[],int c1,int c2)
 {
     int i;
 
