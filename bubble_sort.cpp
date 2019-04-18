@@ -1,11 +1,8 @@
 #include <iostream>
 using namespace std;
-
 int n;
-
 void bubble_Sort(int a[])
 {
-
  	for(int i=0; i<n-1; i++)
  	{
  		int flag = 0;  // Declaring a variable to check if elements have been sorted in this iteration.
@@ -24,7 +21,6 @@ void bubble_Sort(int a[])
  		}
  	}
 }
-
 int main()
 {
 	cout<<"Enter the size of the array"<<endl;
@@ -35,8 +31,10 @@ int main()
 	cin >> a[i];
 	bubble_Sort(a);
 	cout<<"The sorted array is : "<<endl;
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < n; i++) 
+	{
 		cout << a[i] << '\n';
-  }
+        }
+	
   return 0;
 }
