@@ -74,7 +74,8 @@ void union1(int belongs[],int c1,int c2)
     for(i=0;i<n;i++)
         if(belongs[i]==c2)
             belongs[i]=c1;
-}void sort()
+}
+void sort()
 {
     int i,j;
     edge temp;
@@ -91,7 +92,7 @@ void union1(int belongs[],int c1,int c2)
 void print()
 {
     int i,cost=0;
- for(i=0;i<spanlist.n;i++)
+   for(i=0;i<spanlist.n;i++)
     {
         printf("\n%d\t%d\t%d",spanlist.data[i].u,spanlist.data[i].v,spanlist.data[i].w);
         cost=cost+spanlist.data[i].w;
