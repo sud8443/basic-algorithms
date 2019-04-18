@@ -1,18 +1,25 @@
 #include<iostream>
 using namespace std;
-bool BinarySearch(int arr[], int n, int k){
-    int s=0;int e=n-1;
+bool BinarySearch(int arr[], int n, int k)
+{
+    int s=0;
+    int e=n-1;
     while (s<=e){
         int mid=(s+e)/2;
-        if (arr[mid]==k) return true;
-        if (arr[mid]<k){
+        if (arr[mid]==k)
+           return true;
+        if (arr[mid]<k)
+        {
             s=mid+1;
-        } else {
+        }
+        else 
+        {
             e=mid-1;
         }
     }
     return false;
 }
+
 int main(){
     int n; cin>>n;
     int arr[n];
