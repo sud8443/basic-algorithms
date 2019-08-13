@@ -24,6 +24,7 @@ void main()
         	arr[i] = arr[pos];
         	arr[pos] = temp;
     	}
+	
 	cout<<"Now the Array after sorting is :\n";
 	for(i = 0; i < size; i++)
 	{
