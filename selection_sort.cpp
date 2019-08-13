@@ -10,7 +10,9 @@ void main()
 	for(i = 0; i < size; i++)
 	{
 		cin>>arr[i];
+		
 	}
+	
 	cout<<"Sorting array using selection sort...\n";
     	for(i = 0; i < size; i++)
     	{
