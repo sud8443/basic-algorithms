@@ -16,6 +16,7 @@ int main()
 	if (p == -1)
 		cout <<"Not found\n";
 	else cout << "Found at position "<<p+1<<endl;
-return 0;
+	return 0;
+
 }
 
