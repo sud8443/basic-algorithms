@@ -9,6 +9,7 @@ int pos(int arr[] , int size , int tofind)
 }
 int main()
 {
+	
 	const int size = 5;
 	int arr[] = {1,2,3,4,5};
 	int p = pos(arr, size, 2);
@@ -17,3 +18,4 @@ int main()
 	else cout << "Found at position "<<p+1<<endl;
 return 0;
 }
+
